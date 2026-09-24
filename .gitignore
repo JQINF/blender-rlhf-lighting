@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 编辑器
+.vscode/
+
+# Blender 工程与备份（大二进制）
+*.blend
+*.blend1
+
+# 数据产物（嵌入 / 快照 / 对子 / 权重 / BC）
+data/
+
+# 训练与评估日志、checkpoint、渲染图
+logs/
+renders/
+
+# 迁移备份
+backups/
+
+# 打包产物
+addons/lighting_rl.zip
