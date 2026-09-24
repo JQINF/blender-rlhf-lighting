@@ -1,0 +1,29 @@
+[project]
+name = "blender-rlhf-lighting"
+version = "0.1.0"
+description = "RL + human-preference reward model for automatic product lighting in Blender (NN-inherit -> 2-step RLOO refine -> best-of-16 arbitration)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.13"
+dependencies = [
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "open-clip-torch>=2.24",
+    "transformers>=4.40",
+    "gymnasium>=1.0",
+    "numpy>=1.26",
+    "pillow>=10.0",
+    "matplotlib>=3.8",
+]
+
+[tool.pyright]
+# Blender's bpy API ships incomplete type stubs; silence the unknown-type warnings
+reportUnknownMemberType = false
+reportUnknownVariableType = false
+reportMissingImports = false
+reportUnknownArgumentType = false
+reportAttributeAccessIssue = false
+reportUnusedCallResult = false
+reportImplicitStringConcatenation = false
+reportUntypedFunctionDecorator = false
+reportUnknownParameterType = false
